@@ -1,0 +1,77 @@
+.toolbar-background-md {
+  background-color: #ffac37;
+  min-height: 1.6rem;
+  .toolbar-title-md{
+    font-size: 1.1em;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+  }
+
+}
+.menu-content{
+  background: #f9f5ea; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#e6e0cf, #fbf6e7, #f5e3c3, rgba(249, 220, 158, 0.7)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e6e0cf, #fbf6e7, #f5e3c3, rgba(249, 220, 158, 0.7)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e6e0cf, #fbf6e7, #f5e3c3, rgba(249, 220, 158, 0.7)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e6e0cf, #fbf6e7, #f5e3c3, rgba(249, 220, 158, 0.7));
+  .scroll-content{
+    overflow-y: auto;
+  }
+  .squaredFour {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  }
+  .list-header{
+    color: #0c0c0c;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    min-height: initial;
+    .label-md {
+        margin: 13px 8px 0px 0;
+    }
+  }
+  .item-md{
+    background: transparent;
+    min-height: 3rem;
+    .checkbox-md{
+      margin: 9px 10px 9px 0px;
+      .checkbox-icon{
+        border-width: 1px;
+        border-radius: 1px;
+        background: transparent;
+        border-color: #95948e;
+      }
+    }
+    .label-md{
+      margin: 10px 8px 5px 0;
+    }
+    .item-block{
+      .item-inner{
+        border: none!important;
+      }
+    }
+
+    .checkbox-md-dark {
+      .checkbox-checked {
+        .checkbox-inner{
+          border-color: #929292;
+          top: 1px;
+          left: 5px;
+        }
+      }
+    }
+  }
+  .item-inner{
+    border: none!important;
+    p{
+      font-size: 16px;
+    }
+    span{
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+ion-header{
+  .toolbar-md{
+    background-color: rgb(255, 172, 55);
+    min-height:3.25rem;
+    position: relative;
+  }
+  .back-button{
+      position: absolute;
+      top: 4px;
+      left: -5px;
+      padding: 0;
+      z-index: 2;
+    .back-button-icon-md{
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+  
+  .toolbar-title-md{
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+.order-content{
+  background: #f9f5ea; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#e6e0cf, #fbf6e7, #f5e3c3, rgba(249, 220, 158, 0.7)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e6e0cf, #fbf6e7, #f5e3c3, rgba(249, 220, 158, 0.7)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e6e0cf, #fbf6e7, #f5e3c3, rgba(249, 220, 158, 0.7)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e6e0cf, #fbf6e7, #f5e3c3, rgba(249, 220, 158, 0.7));
+  .scroll-content{
+    overflow-y: auto;
+  }
+  .list-header-md{
+    border-top: 0;
+    min-height: initial;
+    color: rgb(12, 12, 12);
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    .label-md{
+      margin: 10px 8px 5px 0px;;
+    }
+  }
+
+  .item{
+    background: transparent;
+    min-height: 3rem;
+    >.item-inner{
+      border: none;
+      padding: 0px;
+      box-shadow: initial!important;
+    }
+    .item-input.label-md{
+      margin: 5px 8px 5px 0;
+      max-width: initial;
+      width: 100%;
+    }
+    ion-input{
+      -webki-flex: initial;
+      -moz-flex: initial;
+      flex: initial;
+      width: 50px;
+    }
+  }
+
+  .send-mail{
+    width: initial;
+    margin: 0px auto;
+    height: 2.6rem;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: normal;
+    border: none;
+    background: #ffac37;
+    font-size: 16px;
+    border-radius: 5px;
+    &:hover{
+      background: #fd9400;
+    }
+  }
+}

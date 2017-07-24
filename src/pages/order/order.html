@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Order
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="order-content">
+  <ion-list no-lines>
+    <ion-list-header class="list-header">
+      <h2>Order</h2>
+    </ion-list-header>
+    <ion-item *ngFor="let item of myOrder">
+      <ion-label class="item-input label-md">
+        <p>{{item.title}}</p>
+        <p id="item.number">{{item.number * item.price}} $</p>
+      </ion-label>
+      <ion-input min="0" [(ngModel)]="item.number" (change)="sumPrice()" type="number">
+        <input class="text-input text-input-md">
+      </ion-input>
+    </ion-item>
+    <div>
+      <ion-label>Total:</ion-label>
+      <ion-label style="text-align: right">{{sum}} USD</ion-label>
+    </div>
+    <button ion-button color="danger" (click)="sendMail()" outline block class="send-mail">Send Order</button>
+  </ion-list>
+</ion-content>

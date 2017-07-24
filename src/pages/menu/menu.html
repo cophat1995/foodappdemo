@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar class="toolbar-background-md">
+    <ion-title>
+      Menu
+    </ion-title>
+    <!--<ion-buttons end>
+      <button ion-button icon-only (click)="nextOrderPage()">My Order
+        <ion-icon name="md-arrow-dropright-circle"></ion-icon>
+      </button>
+    </ion-buttons>--> 
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="menu-content">
+  <div *ngFor="let keys of menu">
+    <ion-label>{{keys.name}}</ion-label>
+    <ion-list *ngFor="let item of keys.value">
+      <ion-item>
+        <ion-checkbox id={{item.id}} color="dark" [(ngModel)]="item.checked" ></ion-checkbox>
+      <ion-label><p>{{item.title}} <span>{{item.price}} $</span></p></ion-label>
+      <button ion-button clear item-right (click)="selectOrder()">View</button>
+    </ion-item>
+    </ion-list>
+  </div>
+</ion-content> 

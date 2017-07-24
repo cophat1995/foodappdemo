@@ -1,16 +1,24 @@
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
-
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { EmailComposer } from '@ionic-native/email-composer';
+
 import { HomePage } from '../pages/home/home';
+import { MenuPage } from '../pages/menu/menu';
+import { OrderPage } from '../pages/order/order';
+import { TabsPage } from '../pages/tabs/tabs';
+import { DataMenuPage } from '../pages/menu/datamenu';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    MenuPage,
+    OrderPage,
+    HomePage,
+    TabsPage,
   ],
   imports: [
     BrowserModule,
@@ -19,12 +27,15 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    MenuPage,
+    OrderPage,
+    HomePage,
+    TabsPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},DataMenuPage,OrderPage,EmailComposer,
   ]
 })
 export class AppModule {}
