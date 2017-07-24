@@ -3,11 +3,6 @@
     <ion-title>
       Menu
     </ion-title>
-    <!--<ion-buttons end>
-      <button ion-button icon-only (click)="nextOrderPage()">My Order
-        <ion-icon name="md-arrow-dropright-circle"></ion-icon>
-      </button>
-    </ion-buttons>--> 
   </ion-navbar>
 </ion-header>
 
@@ -18,7 +13,7 @@
       <ion-item>
         <ion-checkbox id={{item.id}} color="dark" [(ngModel)]="item.checked" ></ion-checkbox>
       <ion-label><p>{{item.title}} <span>{{item.price}} $</span></p></ion-label>
-      <button ion-button clear item-right (click)="selectOrder()">View</button>
+      <!--<button ion-button clear item-right (click)="selectOrder()">View</button>-->
     </ion-item>
     </ion-list>
   </div>
